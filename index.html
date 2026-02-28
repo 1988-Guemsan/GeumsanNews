@@ -56,7 +56,6 @@ main{
 
 .news{
     display:flex;
-    align-items:center;
     margin-bottom:15px;
     border-bottom:1px solid gray;
     padding-bottom:10px;
@@ -65,15 +64,34 @@ main{
 .news img{
     width:120px;
     height:80px;
+    object-fit:cover;
     background:#bbb;
     margin-right:15px;
 }
 
-.news a{
+.textbox{
+    position:relative;
+    width:100%;
+    height:80px;
+}
+
+.title{
+    position:absolute;
+    top:12px;
+    left:0;
+    right:0;
     font-size:20px;
     font-weight:bold;
     color:black;
     text-decoration:none;
+}
+
+.date{
+    position:absolute;
+    bottom:0;
+    right:0;
+    font-size:12px;
+    color:#888;
 }
 </style>
 </head>
@@ -93,27 +111,51 @@ main{
 
 <div id="resultText" class="resulttitle"></div>
 
-<div class="news" data-title="임시뉴스 1">
-<a href="news1.html">
-<img src="thumb1.png" style="object-fit:cover;">
-</a>
-<a href="news1.html">임시뉴스 1</a>
+<!-- 뉴스1 -->
+<div class="news" data-title="개최는 된 금산누에축제 하지만">
+<a href="news1.html"><img src="thumb1.png"></a>
+<div class="textbox">
+<a href="news1.html" class="title">‘개최는 된’ 금산누에축제, 하지만….</a>
+<div class="date">1988.02.10</div>
+</div>
 </div>
 
-
-<div class="news" data-title="임시뉴스 2">
+<!-- 뉴스2 -->
+<div class="news" data-title="1988년 금산누에축제 성황리에 개최, 대한민국 섬유 산업의 역사를 한자리에">
 <a href="news2.html"><img></a>
-<a href="news2.html">임시뉴스 2</a>
+<div class="textbox">
+<a href="news2.html" class="title">1988년 금산누에축제 성황리에 개최, 대한민국 섬유 산업의 역사를 한자리에</a>
+<div class="date">1988.02.05</div>
+</div>
 </div>
 
-<div class="news" data-title="임시뉴스 3">
+<!-- 뉴스3 -->
+<div class="news" data-title="조병갑 군수의 뇌물 수수 의혹, 일파만파 드러나는 진실.
+">
 <a href="news3.html"><img></a>
-<a href="news3.html">임시뉴스 3</a>
+<div class="textbox">
+<a href="news3.html" class="title">조병갑 군수의 뇌물 수수 의혹, 일파만파 드러나는 진실.
+</a>
+<div class="date">1986.09.17</div>
+</div>
 </div>
 
-<div class="news" data-title="임시뉴스 4">
+<!-- 뉴스4 -->
+<div class="news" data-title="‘음머~ 제가 인제부터 할무니 할부지 손자유!’ 송아지 은실이 이야기">
 <a href="news4.html"><img></a>
-<a href="news4.html">임시뉴스 4</a>
+<div class="textbox">
+<a href="news4.html" class="title">‘음머~ 제가 인제부터 할무니 할부지 손자유!’ 송아지 은실이 이야기</a>
+<div class="date">1985.04.02</div>
+</div>
+</div>
+
+<!-- 뉴스5 (추가됨) -->
+<div class="news" data-title="고장의 자랑, 으뜸 군민 조병갑 군수">
+<a href="news5.html"><img></a>
+<div class="textbox">
+<a href="news5.html" class="title">고장의 자랑, 으뜸 군민 조병갑 군수</a>
+<div class="date">1983.11.21</div>
+</div>
 </div>
 
 </main>
